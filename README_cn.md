@@ -28,8 +28,8 @@
 1. 将脚本放置到 Claude Code 的钩子目录：
    ```bash
    mkdir -p ~/.claude/hooks
-   cp claude-edit-error-fix.py ~/.claude/hooks/pre_edit.py
-   chmod +x ~/.claude/hooks/pre_edit.py
+   cp claude-edit-error-fix.py ~/.claude/hooks/editHook.py
+   chmod +x ~/.claude/hooks/editHook.py
    ```
 
 2. 在设置中配置 Claude Code 使用该钩子：
@@ -39,7 +39,7 @@
        "PreToolUse": [
          {
            "matcher": "Edit",
-           "command": "~/.claude/hooks/pre_edit.py"
+           "command": "~/.claude/hooks/editHook.py"
          }
        ]
      }

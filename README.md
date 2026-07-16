@@ -27,8 +27,8 @@ This hook intercepts Edit tool calls before execution, automatically detects and
 1. Place the script in your Claude Code hooks directory:
    ```bash
    mkdir -p ~/.claude/hooks
-   cp claude-edit-error-fix.py ~/.claude/hooks/pre_edit.py
-   chmod +x ~/.claude/hooks/pre_edit.py
+   cp claude-edit-error-fix.py ~/.claude/hooks/editHook.py
+   chmod +x ~/.claude/hooks/editHook.py
    ```
 
 2. Configure Claude Code to use the hook by adding to your settings:
@@ -38,7 +38,7 @@ This hook intercepts Edit tool calls before execution, automatically detects and
        "PreToolUse": [
          {
            "matcher": "Edit",
-           "command": "~/.claude/hooks/pre_edit.py"
+           "command": "~/.claude/hooks/editHook.py"
          }
        ]
      }
