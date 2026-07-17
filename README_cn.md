@@ -28,7 +28,7 @@
 1. 将脚本放置到 Claude Code 的钩子目录：
    ```bash
    mkdir -p ~/.claude/hooks
-   cp claude-edit-error-fix.py ~/.claude/hooks/editHook.py
+   cp editHook.py ~/.claude/hooks/editHook.py
    chmod +x ~/.claude/hooks/editHook.py
    ```
 

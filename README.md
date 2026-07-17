@@ -27,7 +27,7 @@ This hook intercepts Edit tool calls before execution, automatically detects and
 1. Place the script in your Claude Code hooks directory:
    ```bash
    mkdir -p ~/.claude/hooks
-   cp claude-edit-error-fix.py ~/.claude/hooks/editHook.py
+   cp editHook.py ~/.claude/hooks/editHook.py
    chmod +x ~/.claude/hooks/editHook.py
    ```
 
